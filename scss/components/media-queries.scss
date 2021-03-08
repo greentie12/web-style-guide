@@ -7,85 +7,83 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
 
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .col-1 {
+      flex-basis: 8.33%;
+    }
 
-  .row {
-    flex-direction: row;
-  }
+    .col-2 {
+      flex-basis: 16.67%;
+    }
 
-  [class^="col"] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-  }
+    .col-3 {
+      flex-basis: 25%;
+    }
 
-  [class^="col"] + [class^="col"] {
-    margin-left: 10px;
-  }
+    .col-4 {
+      flex-basis: 33.33%;
+    }
 
-  .col-1 {
-    flex-basis: 8.33%;
-  }
+    .col-5 {
+      flex-basis: 41.67%;
+    }
 
-  .col-2 {
-    flex-basis: 16.67%;
-  }
+    .col-6 {
+      flex-basis: 50%;
+    }
 
-  .col-3 {
-    flex-basis: 25%;
-  }
+    .col-7 {
+      flex-basis: 58.33%;
+    }
 
-  .col-4 {
-    flex-basis: 33.33%;
-  }
+    .col-8 {
+      flex-basis: 66.67%;
+    }
 
-  .col-5 {
-    flex-basis: 41.67%;
-  }
+    .col-9 {
+      flex-basis: 75%;
+    }
 
-  .col-6 {
-    flex-basis: 50%;
-  }
+    .col-10 {
+      flex-basis: 83.33%;
+    }
 
-  .col-7 {
-    flex-basis: 58.33%;
-  }
+    .col-11 {
+      flex-basis: 91.67%;
+    }
 
-  .col-8 {
-    flex-basis: 66.67%;
-  }
+    .col-12 {
+      flex-basis: 100%;
+    }
 
-  .col-9 {
-    flex-basis: 75%;
-  }
+    .row {
+      flex-direction: row;
 
-  .col-10 {
-    flex-basis: 83.33%;
-  }
+      .centered {
+        @include block-center;
+      }
 
-  .col-11 {
-    flex-basis: 91.67%;
-  }
+      [class^="col"] {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        align-items: center;
+      }
 
-  .col-12 {
-    flex-basis: 100%;
+      [class^="col"] + [class^="col"] {
+        margin-left: 10px;
+      }
+    }
   }
 
   .nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-  }
 
-  .nav-link {
-    flex-basis: 100px;
+    .nav-link {
+      flex-basis: 100px;
+    }
   }
 
   .btn {

@@ -1,0 +1,8 @@
+// =====================
+//  Functions
+// =====================
+
+@function color($base, $shade: null) {
+  $color: map-get(map-get($colors, $base), $shade);
+  @return $color;
+}

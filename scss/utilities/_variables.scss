@@ -4,18 +4,18 @@
 
 // Colors
 $white: #fff;
-
+$color-shade: #ccc;
+// Base
 $color-primary: #58e1c1;
 $color-primary-light: lighten($color-primary, 10%);
 $color-secondary: #51ddfc;
-$color-shade: #ccc;
-
+// Messages
 $color-default: $color-secondary;
 $color-error: #e4757a;
 $color-info: #927bc1;
 $color-success: #63cc82;
 $color-warning: #fd7856;
-
+// Themes
 $color-col-1: $color-info;
 $color-col-2: $color-warning;
 $color-col-3: #deb2ee;
@@ -28,8 +28,56 @@ $color-col-9: $color-error;
 $color-col-10: $color-success;
 $color-col-11: $color-secondary;
 $color-col-12: #80e8d1;
-
+// Text
 $color-text: #777;
+// Shade PCT amount
+$color-adjust-amount: 10%;
+// Color map
+$colors: (
+  primary: (
+    base: $color-primary,
+    light: lighten($color-primary, $color-adjust-amount),
+    dark: darken($color-primary, $color-adjust-amount),
+  ),
+  secondary: (
+    base: $color-secondary,
+    light: lighten($color-secondary, $color-adjust-amount),
+    dark: darken($color-secondary, $color-adjust-amount),
+  ),
+  text-c: (
+    base: $color-text,
+    light: lighten($color-text, $color-adjust-amount),
+    dark: darken($color-text, $color-adjust-amount),
+  ),
+  shade: (
+    base: $color-shade,
+    light: lighten($color-shade, $color-adjust-amount),
+    dark: darken($color-shade, $color-adjust-amount),
+  ),
+);
+
+$themes: (
+  col-1: $color-col-1,
+  col-2: $color-col-2,
+  col-3: $color-col-3,
+  col-4: $color-col-4,
+  col-5: $color-col-5,
+  col-6: $color-col-6,
+  col-7: $color-col-7,
+  col-8: $color-col-8,
+  col-9: $color-col-9,
+  col-10: $color-col-10,
+  col-11: $color-col-11,
+  col-12: $color-col-12,
+);
+
+$buttons: (
+  default: $color-default,
+  success: $color-success,
+  error: $color-error,
+  warning: $color-warning,
+  info: $color-info,
+);
 
 // Fonts
 $font-stack-primary: "Lato", sans-serif;

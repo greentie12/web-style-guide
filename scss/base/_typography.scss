@@ -4,7 +4,7 @@
 
 * {
   font-family: $font-stack-primary;
-  color: $color-text;
+  color: color(text-c, base);
   box-sizing: border-box;
 }
 
@@ -21,17 +21,17 @@ a {
 /* ============================================= */
 
 .headline-primary {
-  color: $color-primary;
+  color: color(primary, base);
   margin-left: 10px;
 }
 
 .headline-secondary {
   font-weight: 300;
-  color: $color-text;
+  color: color(text-c, base);
 }
 
 .link {
-  color: $color-secondary;
+  color: color(secondary, base);
   font-weight: 700;
 }
 
@@ -41,6 +41,6 @@ a {
   font-style: italic;
   margin-left: 20px;
   padding-left: 20px;
-  border-left: 8px solid $color-primary;
+  border-left: 8px solid color(primary, base);
   border-radius: 5px;
 }
